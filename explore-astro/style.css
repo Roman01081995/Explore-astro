@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'Mak';
+    src: url('./fonts/MAK.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mak-Bold';
+    src: url('./fonts/MAK-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #ba93ff;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 1280px;
+    padding: 24px 80px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav-buttons {
+    width: 662px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+}
+
+.content {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Mak-Bold', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 86.4px;
+    color: #FFFFFF;
+}
+
+.content p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-group {
+    width: 1060px;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group a {
+    width: 229.5px;
+    padding: 16px;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    text-align: center;
+    border-radius: 34px;
+    background: #A4FFB8;
+    border: 5px solid #A4FFB8B2;
+    box-shadow: 0px 4px 4px 0px #00000012;
+    opacity: 1;
+    margin-right: 47px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.button-group a:last-child {
+    margin-right: 0; 
+}
+
+.button-group a:hover {
+    border-color: #FFFFFF; 
+}
+
+.button-group a:active {
+    background-color: #3AFF65; 
+    border-color: #ffffff; 
+}
+
+.info-section {
+    width: 1280px;
+    display: flex;
+    margin: 200px 80px 0 80px;
+
+}
+
+.text-block {
+    width: 843px;
+    height: 307px;
+    padding: 20px 20px 20px 0px;
+    box-sizing: border-box;
+    margin-right: 52px; 
+}
+
+.text-block p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    line-height: 25.2px;
+    color: #000000;
+}
+
+.image-block {
+    width: 381px;
+    height: 373px;
+}
+
+.image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-header {
+    width: 1440px;
+    height: 58px;
+    margin-top: 130px; 
+    padding-left: 80px;
+}
+
+.section-header h2 {
+    font-family: 'Mak';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    color:#ffffff;
+}
+
+.info-blocks {
+    width: 1280px;
+    height: 440px;
+    margin: 40px 80px 0 80px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    border-radius: 24px;
+    background-color: #FFFFFF26;
+    padding: 0px 32px 0px 32px;
+}
+
+.info-item {
+    width: 280px;
+    height: 316px;
+    margin-left: 16px; 
+    text-align: left; 
+}
+
+.info-item img {
+    width: 240px;
+    height: 200px;
+    margin-bottom: 16px; 
+}
+
+.info-item p {
+    width: 280px;
+    height: 100px;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    color: #000000; 
+}
+
+.section-header-analysis {
+    text-align: center;
+    margin-top: 130px; 
+}
+
+.section-header-analysis h2 {
+    font-family: 'Mak';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    color: #FFFFFF;
+}
+
+
+.cards-container {
+    width: 1280px;
+    height: 632px;
+    margin: 50px 80px 0 80px; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+
+.card {
+    position: relative; 
+    width: 624px;
+    height: 281px;
+    background-color: #FFFFFF33;
+    border-radius: 24px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 40px; 
+    padding: 32px; 
+    box-sizing: border-box; 
+}
+
+
+.card-icon {
+    position: absolute; 
+    top: -20px; 
+    right: 24px; 
+    width: 65px; 
+    height: 38px; 
+}
+
+.card-title {
+    font-family: 'Mak', sans-serif;
+    font-size: 24px;
+    line-height: 33.6px;
+    color: #A4FFB8;
+    margin: 0 0 10px 0; 
+    text-shadow: 2px 2px 1px #7D58D433;
+ }
+
+/* Стилі для опису картки */
+.card-description {
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #000000;
+    margin: 0; 
+}
