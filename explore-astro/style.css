@@ -254,7 +254,6 @@ body {
     text-shadow: 2px 2px 1px #7D58D433;
  }
 
-/* Стилі для опису картки */
 .card-description {
     font-family: Helvetica, sans-serif;
     font-weight: 400;
@@ -263,3 +262,138 @@ body {
     color: #000000;
     margin: 0; 
 }
+
+.bigimg{
+    margin-top: 130px;
+    text-align: center;
+}
+
+.thisimg{
+    width: 1243px;
+    height: 632px;
+}
+
+.underheader {
+    margin-top: -100px; 
+}
+
+.underheader h2 {
+    font-family: 'Mak';
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.testimonial-header {
+    width: 1440px;
+    height: 58px;
+    margin-top: 130px; 
+    padding-left: 80px;
+}
+
+.testimonial-header h2 {
+    font-family: 'Mak';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    color:#ffffff;
+}
+
+.testimonials {
+    width: 1280px;
+    height: 445px;
+    margin: 40px 80px 0 80px; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+
+.testimonial-block {
+    width: 405px;
+    height: 445px;
+    background-color: #FFFFFF4D;
+    border-radius: 24px;
+    padding: 40px 32px 40px 32px; 
+    box-sizing: border-box; 
+    text-align: left;
+}
+
+.testimonial-tittle {
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 33.6px;
+    color:#000000;
+    margin: 0 0 8px 0; 
+ }
+
+.starsimg {
+    margin-bottom: 24px;
+    width: 152px;
+    height: 24px;
+}
+
+.testimonial-description {
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #000000;
+    margin: 0; 
+}
+
+
+
+.footer{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    width: 1440px;
+    height: 311px;
+}
+
+.containercenter{
+    width: 662px;
+    height: 84px;
+    margin: 128px 50px 99px 50px;
+}
+
+.bgimgstars{
+    width: 332px;
+    height: 332px;
+    
+}
+
+.footertittle {
+    text-align: center;
+}
+
+.footertittle h2 {
+    font-family: 'Mak';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #A4FFB8;
+}
+
+.nav-buttons-footer {
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-buttons-footer a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.4px;
+}
+
+
+
