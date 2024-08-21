@@ -286,54 +286,74 @@ body {
 .cards-container {
     width: 1280px;
     height: 632px;
-    margin: 50px 80px 0 80px; 
+    margin: 50px 80px 0 80px;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-}
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-
-.card {
-    position: relative; 
+  .card {
+    position: relative;
     width: 624px;
     height: 281px;
-    background-color: #FFFFFF33;
+    background-color: #ffffff33;
     border-radius: 24px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-    margin-bottom: 40px; 
-    padding: 32px; 
-    box-sizing: border-box; 
-    border: 4px;
-    border-style: outset;
-    border-color: hsla(133, 100%, 82%, 1);
-}
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 32px;
+    box-sizing: border-box;
+    border: 4px solid transparent; 
+  }
 
+  .card:hover {
+    animation: borderAnimation 4s linear;
+  }
 
-.card-icon {
-    position: absolute; 
-    top: -20px; 
-    right: 24px; 
-    width: 65px; 
-    height: 38px; 
-}
+  @keyframes borderAnimation {
+    0% {
+      border-color: transparent;
+    }
+    25% {
+      border-color: #A4FFB8 transparent transparent transparent;
+    }
+    50% {
+      border-color: transparent #A4FFB8 transparent transparent;
+    }
+    75% {
+      border-color: transparent transparent #A4FFB8 transparent;
+    }
+    100% {
+      border-color: transparent transparent transparent #A4FFB8;
+    }
+  }
 
-.card-title {
+  .card-icon {
+    position: absolute;
+    top: -20px;
+    right: 24px;
+    width: 65px;
+    height: 38px;
+  }
+
+  .card-title {
     font-family: 'Mak', sans-serif;
     font-size: 24px;
     line-height: 33.6px;
-    color: #A4FFB8;
-    margin: 0 0 10px 0; 
-    text-shadow: 2px 2px 1px #7D58D433;
- }
+    color: #a4ffb8;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 1px #7d58d433;
+  }
 
-.card-description {
+  .card-description {
     font-family: Helvetica, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 25.2px;
     color: #000000;
-    margin: 0; 
-}
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
 .bigimg{
     margin-top: 130px;
