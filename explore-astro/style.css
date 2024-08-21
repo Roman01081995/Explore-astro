@@ -13,7 +13,7 @@
 }
 
 
-  body {
+body {
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
@@ -25,7 +25,57 @@
 .container {
     width: 1440px;
     margin: 0 auto;
+    position: relative;
 }
+
+.signsinheader{
+    position: absolute;
+    top: -24px;
+    left: 736px;
+    width: 753px;
+    height: 753px;
+    background-image: url('./img/signsinheader.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.signsinheaderlower{
+    position: absolute;
+    top: 431px;
+    left: -141px;
+    width: 512px;
+    height: 512px;
+    background-image: url('./img/signsinheaderlower.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.starsthirdimg{
+    position: absolute;
+    top: 1113px;
+    left: 716px;
+    width: 366px;
+    height: 366px;
+    background-image: url('./img/starsthirdimg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.starsfourimg{
+    position: absolute;
+    top: 1739px;
+    left: -80px;
+    width: 346px;
+    height: 331px;
+    background-image: url('./img/starsfourimg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
 
 .header {
     width: 1280px;
@@ -49,7 +99,23 @@
     text-decoration: none;
     color: #000000;
     font-family: Helvetica, sans-serif;
+    width: 137px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.4px;
+    text-align: center;
+    border-radius: 13px;
 }
+
+.nav-buttons a:hover {
+    background-color: #FFFFFF33; 
+}
+
+.nav-buttons a:active {
+    background-color: #A4FFB866; 
+}
+
 
 .content {
     margin-top: 200px;
@@ -237,6 +303,9 @@
     margin-bottom: 40px; 
     padding: 32px; 
     box-sizing: border-box; 
+    border: 4px;
+    border-style: outset;
+    border-color: hsla(133, 100%, 82%, 1);
 }
 
 
@@ -390,12 +459,22 @@
 }
 
 .nav-buttons-footer a {
+    width: 137px;
+    padding: 8px;
     text-decoration: none;
     color: #000000;
     font-family: Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 18.4px;
+    text-align: center;
+    border-radius: 13px;
 }
 
+.nav-buttons-footer a:hover {
+    background-color: #FFFFFF33; 
+}
 
+.nav-buttons-footer a:active {
+    background-color: #A4FFB866; 
+}
