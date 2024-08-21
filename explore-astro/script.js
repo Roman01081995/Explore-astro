@@ -4,7 +4,9 @@
     body.style.background = `linear-gradient(
       to bottom,
       #D9ACFF 0%,
-      #AE89FF 45%,
+      #AE89FF 5%,
+      #D9ACFF 15%,
+      #AE89FF 40%,
       #D9ACFF 65%,
       #AE89FF 100%
     )`;
