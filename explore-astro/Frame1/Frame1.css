@@ -13,25 +13,30 @@
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
+    min-height: 100vh; /* Сторінка займає всю висоту екрана */
+    display: flex;
+    flex-direction: column;
 }
 
+/* Оновлений стиль для container */
 .container {
     width: 100%;
     margin: 0;
+    padding: 0; /* Додаємо паддінг по боках */
+    flex-grow: 1; /* Забезпечує, що головний контент займатиме весь доступний простір */
 }
 
+/* Оновлений стиль для header */
 .header {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px; /* Максимальна ширина для header */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: 25px auto 0; /* Відступ зверху 20px */
 }
 
 .logo {
@@ -320,17 +325,16 @@ label {
 
 .footer {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
 }
 
 .containercenter {
     width: 662px;
     height: 79px;
+    padding-top: 20px;
 }
 
 .footertittle {
@@ -349,7 +353,7 @@ label {
     height: 34px;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .nav-buttons-footer a {
