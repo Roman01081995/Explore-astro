@@ -1,0 +1,374 @@
+@font-face {
+    font-family: 'Mak';
+    src: url('./fonts/MAK.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mak-Bold';
+    src: url('./fonts/MAK-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+.header {
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav-buttons {
+    width: 662px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    width: 137px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.4px;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.nav-buttons a:hover {
+    background-color: #FFFFFF33; 
+}
+
+.nav-buttons a:active {
+    background-color: #A4FFB866; 
+}
+
+.nav-buttons a:first-child{
+    color: #4217A6;
+}
+
+.containerlogo {
+    display: flex;
+    justify-content: center;
+}
+
+.section-header {
+    width: 1280px;
+    height: 58px;
+    margin-top: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.section-header h2 {
+    font-family: 'Mak';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    color:#ffffff;
+    margin: 0;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 24px;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.thumbnails img {
+    height: 40px; 
+    width: auto;
+    cursor: pointer;
+}
+
+.full-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 350px;
+    background-color: #4217A633;
+    border-radius: 4px;
+}
+
+.active-line {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: #4217A6;
+    border-radius: 4px;
+    transition: width 0.3s ease, left 0.3s ease;
+    width: 0;
+    left: 0;
+}
+
+
+/* Основний контейнер сторінки */
+.containercontentblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Займає всю висоту екрана */
+}
+
+/* Загальний блок */
+.content-block {
+    width: 1280px;
+    height: 700px;
+    background-color: #F7F1F1;
+    border-radius: 40px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Внутрішній контент розміщується вертикально */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Відступ між елементами всередині */
+}
+
+/* Внутрішній блок */
+.inner-block {
+    width: 1216px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Іконка зліва, кнопка справа */
+}
+
+/* Іконка */
+.inner-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 0; /* Притискання до лівого краю */
+}
+
+/* Кнопка */
+.action-button {
+    width: 121px;
+    height: 40px;
+    padding: 10px 16px;
+    border-radius: 33px;
+    background-color: #FDBC08;
+    border: none;
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.4px;
+    cursor: pointer;
+    margin-right: 0;
+    text-align: center;
+}
+
+/* Блок питання */
+.questionblock {
+    width: 624px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Відступ між елементами всередині */
+    box-sizing: border-box;
+}
+
+.yourename {
+    width: 100%;
+    text-align: center;
+}
+
+.yourename h2 {
+    font-family: 'Mak';
+    font-size: 24px;
+    font-weight: 700;
+    color: #915EFD;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+/* Контейнер з варіантами */
+.containeroption {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap; /* Елементи будуть переноситися, якщо не вистачає місця */
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Радіо-кнопки */
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 3.5px solid #915EFD;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #000E3F;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Поле введення */
+.input-field {
+    width: 624px;
+    height: 62px;
+    padding: 20px;
+    border-radius: 34px;
+    border: 2px solid #C175FF;
+    font-size: 16px;
+    color: #565656;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    background: none;
+}
+
+.input-field::placeholder {
+    color: #565656;
+    text-align: center;
+}
+
+.input-field:hover {
+    border-color: #000E3F; 
+}
+
+
+.bigbutton{
+    width: 624px;
+    height: 62px;
+    padding: 16px;
+    border-radius: 34px;
+    box-sizing: border-box;
+    outline: none;
+    background: #A4FFB8;
+    border: 5px solid #d6f7da;
+    box-shadow: 0px 4px 4px 0px #00000012;
+    opacity: 1;
+    transition: background-color 0.3s, border-color 0.3s;
+    color: #000000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    cursor: pointer;
+    margin-top: -20px;
+}
+
+.bigbutton:hover {
+    border-color: #FFFFFF; 
+}
+
+.bigbutton:active {
+    background-color: #3AFF65; 
+    border-color: #ffffff; 
+}
+
+
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.containercenter {
+    width: 662px;
+    height: 79px;
+}
+
+.footertittle {
+    text-align: center;
+}
+
+.footertittle h2 {
+    font-family: 'Mak';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #A4FFB8;
+}
+
+.nav-buttons-footer {
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-buttons-footer a {
+    width: 137px;
+    padding: 8px;
+    text-decoration: none;
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.4px;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.nav-buttons-footer a:hover {
+    background-color: #FFFFFF33; 
+}
+
+.nav-buttons-footer a:active {
+    background-color: #A4FFB866; 
+}
