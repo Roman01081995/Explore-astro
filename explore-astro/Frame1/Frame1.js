@@ -36,5 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
             activeLine.style.width = `${width}px`; // Розширюємо лінію до нової іконки
         });
     });
-});
 
+      // Робота з бургер-меню
+  const burgerMenu = document.querySelector('.burger-menu');
+  const navButtons = document.querySelector('.nav-buttons');
+
+  burgerMenu.addEventListener('click', () => {
+      navButtons.classList.toggle('open');
+  });
+});
