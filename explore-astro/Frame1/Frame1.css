@@ -138,6 +138,7 @@ body {
     height: 100vh; 
 }
 
+/* Загальний блок */
 .content-block {
     width: 1280px;
     height: 700px;
@@ -151,6 +152,7 @@ body {
     gap: 20px; 
 }
 
+/* Внутрішній блок */
 .inner-block {
     width: 1216px;
     height: 40px;
@@ -159,12 +161,14 @@ body {
     justify-content: space-between; 
 }
 
+/* Іконка */
 .inner-icon {
     width: 40px;
     height: 40px;
     margin-left: 0; 
 }
 
+/* Кнопка */
 .action-button {
     width: 121px;
     height: 40px;
@@ -182,6 +186,7 @@ body {
     text-align: center;
 }
 
+/* Блок питання */
 .questionblock {
     width: 624px;
     display: flex;
@@ -363,6 +368,8 @@ label {
     background-color: #A4FFB866; 
 }
 
+
+
 /* Адаптивність для мобільних пристроїв */
 @media (max-width: 768px) {
     .header {
@@ -500,6 +507,7 @@ label {
     .bigbutton {
         width: 100%;
         margin-top: 20px;
+        border-color:#FFFFFF;
     }
     
     .footer {
